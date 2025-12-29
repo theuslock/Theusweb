@@ -2,131 +2,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <title>SecureStart | Segurança da Informação do Zero</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Guias práticos e acessíveis para aprender Segurança da Informação desde o básico. Planos a partir de R$29/mês." />
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="hero">
-  <h1>Aprenda Segurança da Informação do Zero</h1>
-  <p>Guias práticos, simples e acessíveis para se proteger no mundo digital.</p>
-  <a href="#planos" class="btn">Começar agora</a>
-</header>
+  <!-- Skip link para acessibilidade -->
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
 
-<section class="section">
-  <h2>O que você vai aprender</h2>
-  <ul class="cards">
-    <li>🔐 Senhas seguras</li>
-    <li>🎣 Como evitar golpes e phishing</li>
-    <li>📶 Segurança em Wi-Fi</li>
-    <li>📜 LGPD para iniciantes</li>
-    <li>🏪 Segurança para pequenos negócios</li>
-  </ul>
-</section>
+  <header class="hero" role="banner">
+    <div class="container">
+      <h1>Aprenda Segurança da Informação do Zero</h1>
+      <p>Guias práticos, simples e acessíveis para se proteger no mundo digital.</p>
+      <a href="#planos" class="btn" role="button">Começar agora</a>
+    </div>
+  </header>
 
-<section id="planos" class="section dark">
-  <h2>Planos</h2>
-  <div class="pricing">
-    <div class="price-card">
-      <h3>Básico</h3>
-      <p>R$ 29/mês</p>
-      <a class="btn">Assinar</a>
-    </div>
-    <div class="price-card highlight">
-      <h3>Pro</h3>
-      <p>R$ 59/mês</p>
-      <a class="btn">Assinar</a>
-    </div>
-    <div class="price-card">
-      <h3>Premium</h3>
-      <p>R$ 99/mês</p>
-      <a class="btn">Assinar</a>
-    </div>
-  </div>
-</section>
+  <main id="main" class="site-main" role="main">
+    <section class="section" aria-labelledby="o-que-aprender">
+      <div class="container">
+        <h2 id="o-que-aprender">O que você vai aprender</h2>
+        <ul class="cards" aria-label="Principais tópicos">
+          <li>🔐 Senhas seguras</li>
+          <li>🎣 Como evitar golpes e phishing</li>
+          <li>📶 Segurança em Wi‑Fi</li>
+          <li>📜 LGPD para iniciantes</li>
+          <li>🏪 Segurança para pequenos negócios</li>
+        </ul>
+      </div>
+    </section>
 
-<footer>
-  <p>© SecureStart - Educação em Segurança da Informação</p>
-</footer>
+    <section id="planos" class="section dark" aria-labelledby="planos-title">
+      <div class="container">
+        <h2 id="planos-title">Planos</h2>
+
+        <div class="pricing" role="list">
+          <article class="price-card" role="listitem" aria-label="Plano Básico">
+            <h3>Básico</h3>
+            <p class="price">R$ 29/mês</p>
+            <p class="price-desc">Conteúdo essencial para começar.</p>
+            <a class="btn" href="#" role="button" aria-label="Assinar plano Básico">Assinar</a>
+          </article>
+
+          <article class="price-card highlight" role="listitem" aria-label="Plano Pro">
+            <h3>Pro</h3>
+            <p class="price">R$ 59/mês</p>
+            <p class="price-desc">Aulas extras, materiais e suporte.</p>
+            <a class="btn" href="#" role="button" aria-label="Assinar plano Pro">Assinar</a>
+          </article>
+
+          <article class="price-card" role="listitem" aria-label="Plano Premium">
+            <h3>Premium</h3>
+            <p class="price">R$ 99/mês</p>
+            <p class="price-desc">Acesso completo e consultoria.</p>
+            <a class="btn" href="#" role="button" aria-label="Assinar plano Premium">Assinar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© SecureStart - Educação em Segurança da Informação</p>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
-body {
-  background: #0F172A;
-  color: #E5E7EB;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.btn {
-  background: #2563EB;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.section.dark {
-  background: #020617;
-}
-
-.cards {
-  list-style: none;
-  display: grid;
-  gap: 15px;
-  max-width: 600px;
-  margin: auto;
-}
-
-.pricing {
-  display: grid;
-  gap: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.price-card {
-  background: #020617;
-  padding: 30px;
-  border-radius: 12px;
-}
-
-.price-card.highlight {
-  border: 2px solid #22C55E;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  font-size: 0.9rem;
-}
