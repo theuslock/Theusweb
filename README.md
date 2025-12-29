@@ -1,8 +1,4 @@
 # Theusweb
-Venda de serviços 
-/landing
- ├── index.html
- ├── style.css
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
